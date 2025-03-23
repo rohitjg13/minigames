@@ -118,8 +118,8 @@ export default function MemoryGame() {
       
       {gameOver ? (
         <div className="text-center mb-6">
-          <h2 className="text-2xl font-bold mb-4">Congratulations!</h2>
-          <p className="mb-4">You completed the game in {moves} moves.</p>
+          <h2 className="text-2xl font-bold mb-4 text-black">Congratulations!</h2>
+          <p className="mb-4 text-black">You completed the game in {moves} moves.</p>
           <button 
             onClick={initializeGame}
             className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded shadow-md"
@@ -151,14 +151,16 @@ export default function MemoryGame() {
               </div>
             ))}
           </div>
+          <div className="flex justify-center items-center">
+            <button 
+                onClick={initializeGame}
+                className="bg-white text-black px-4 py-2 rounded-full text-lg font-bold mt-4 hover:bg-blue-100 hover:shadow-md transition-all duration-200"
+                >
+                Reset Game
+            </button>
+         </div>
         </div>
       )}
-        <button 
-            onClick={initializeGame}
-            className="bg-white text-black px-4 py-2 rounded-full text-lg font-bold mt-4 hover:bg-blue-100 hover:shadow-md transition-all duration-200"
-            >
-            Reset Game
-        </button>
     </div>
   );
 }
