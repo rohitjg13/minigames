@@ -113,7 +113,7 @@ export default function MemoryGame() {
       <h1 className="text-3xl font-bold text-blue-800 mb-4">Memory Match</h1>
       
       <div className="mb-4">
-        <p className="text-lg">Moves: {moves}</p>
+        <p className="text-lg text-black">Moves: {moves}</p>
       </div>
       
       {gameOver ? (
