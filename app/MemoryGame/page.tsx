@@ -109,7 +109,7 @@ export default function MemoryGame() {
   const displayCards = cards;
   
   return (
-    <div className="min-h-screen bg-blue-100 flex flex-col items-center p-4">
+    <div className="min-h-screen bg-blue-100 flex flex-col items-center p-4" style={{ backgroundColor: "#dbeafe" }}>
       <h1 className="text-3xl font-bold text-blue-800 mb-4">Memory Match</h1>
       
       <div className="mb-4">
